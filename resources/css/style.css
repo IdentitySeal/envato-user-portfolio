@@ -521,6 +521,22 @@
             right: 5px;
             top: 120px;
         }
+        .bubble {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        .x2 {
+            left: 45px !important;
+        }
+        .x3 {
+            left: 35px !important;
+        }
+        .x4 {
+            left: 57px !important;
+        }
+        .x5 {
+            left: 35px !important;
+        }
     }
     /* @media (min-width: 577px) and (max-width: 767.98px) { ... } */
     
