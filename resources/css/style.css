@@ -344,6 +344,10 @@
     /* margin: 0;
     /* } */
     
+    .def {
+        font-size: 24px;
+    }
+    
     footer {
         background-color: #333;
     }
@@ -425,11 +429,17 @@
         div.container-fluid.px-5.py-5.c {
             background-color: #F2F2F2;
         }
+        .br-white {
+            border-color: #fff;
+        }
         .rm.pb-5.pt-sm-4.pt-md-0.text-black,
         h4.rm.pt-5,
         h4.rm.pb-4.text-black,
         .text-center.py-md-5.py-lg-5.header-font {
             padding-top: 2rem !important;
+        }
+        div.pr-5.pt-3.pb-1.w-75 {
+            width: 100% !important;
         }
         .pr-5 {
             padding-right: 0rem !important;
@@ -521,7 +531,11 @@
         ul li a.nav-text,
         .btn.btn-outline-dark.text-white {
             font-size: 12px;
-            letter-spacing: 0.1em
+            letter-spacing: 0.1em;
+        }
+        .btn-outline-dark {
+            /* border-color: #fff !important; */
+            width: 117px;
         }
         li {
             list-style: none;
@@ -532,7 +546,7 @@
         }
         ul li.li {
             display: inline;
-            padding-right: 5px;
+            padding-right: 15px;
         }
         ul li a.nav-text.i:hover {
             border-bottom: 2px solid #fff;
