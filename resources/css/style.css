@@ -383,11 +383,13 @@
         text-decoration: none;
     }
     
-    .nav-text:hover {
-        text-decoration: none;
-        /* border-bottom: ; */
-        border-bottom-color: #fff;
+    .nav-text.i:hover {
+        border-bottom: 2px solid #fff !important;
     }
+    /* .nav-text:hover {
+        text-decoration: none;
+        border-bottom-color: #fff;
+    } */
     
     .topnav-right {
         float: right;
@@ -418,7 +420,7 @@
     /* text-size */
     
     button.btn.btn-outline-dark.text-white {
-        margin-top: -9px;
+        margin-bottom: -19px;
     }
     
     @media only screen and (max-width:576px) {
@@ -549,7 +551,7 @@
             padding-right: 15px;
         }
         ul li a.nav-text.i:hover {
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid #fff !important;
         }
         div.col-md-4.col-lg-4 {
             padding-bottom: 2.5rem;
