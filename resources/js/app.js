@@ -16,6 +16,18 @@ $(function() {
         }
     });
 });
+// Add active class to the current button (highlight it)
+var select = document.getElementsByClassName("select");
+for (var i = 0; i < select.length; i++) {
+    select[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activeNav");
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" activeNav", "");
+        }
+        this.className += " activeNav";
+    });
+}
+// 
 // Collapse the navbar link is clicked 
 
 $('.navbar-nav>li>a').on('click', function() {

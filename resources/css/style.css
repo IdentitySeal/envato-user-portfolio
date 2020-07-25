@@ -10,10 +10,6 @@
         font-size: 14px;
     } */
     
-    div.topnav-right.out .nav-text.i:hover {
-        border-bottom: 2px solid #fff !important;
-    }
-    
     .navbar.active {
         /* padding-top: 0.2rem; */
         /* padding-bottom: 0.2rem; */
@@ -22,9 +18,20 @@
         box-shadow: 3px 1px 13px rgba(0, 0, 0, 0.1);
     }
     
-    .nav-item.mt-1 a:hover {
+    .navbar {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    
+    .select:hover,
+    .activeNav {
         border-bottom: 2px solid #000 !important;
     }
+    /* .active-nav {
+        border-bottom: 2px solid #000 !important;
+    } */
     
     .container-fluid {
         padding-right: 100px !important;
@@ -48,12 +55,11 @@
     /* --------------------------------------------------------------------------------------------------------------------------------- */
     /* nav section */
     /* change background on-scroll */
-    
-    .navbar.active {
+    /* .navbar.active {
         color: #007bff;
         background: #fff;
         box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-    }
+    } */
     /* change background on-scroll */
     
     header nav .collapse ul .nav-item .nav-link,
@@ -125,6 +131,19 @@
     /* Project section */
     /* Resume Section */
     
+    .header-font {
+        font-size: 40px;
+        font-weight: 600 !important;
+        color: #333333 !important;
+    }
+    
+    button.btn.btn-dark {
+        width: 156px;
+        height: 53px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
     .side-bar {
         width: 1rem;
         height: 6.5rem;
@@ -143,6 +162,11 @@
     
     div .card-body.ml-3 h4.card-title {
         line-height: 29px;
+    }
+    
+    .text-black {
+        color: #000;
+        font-weight: 600;
     }
     
     div.card div.card-body {
@@ -166,6 +190,7 @@
         line-height: 0 !important;
         background-color: #fff;
         border-radius: 10px;
+        height: 23px;
         /* width: 354px; */
     }
     
@@ -358,12 +383,6 @@
         text-decoration: none;
         /* border-bottom: ; */
         border-bottom-color: #fff;
-        border-bottom-width: 4px;
-    }
-    
-    .topnav a.active {
-        background-color: #4CAF50;
-        color: white;
     }
     
     .topnav-right {
@@ -402,6 +421,15 @@
         .container-fluid {
             padding-left: 31px !important;
             padding-right: 31px !important;
+        }
+        div.container-fluid.px-5.py-5.c {
+            background-color: #F2F2F2;
+        }
+        .rm.pb-5.pt-sm-4.pt-md-0.text-black,
+        h4.rm.pt-5,
+        h4.rm.pb-4.text-black,
+        .text-center.py-md-5.py-lg-5.header-font {
+            padding-top: 2rem !important;
         }
         .pr-5 {
             padding-right: 0rem !important;
@@ -472,7 +500,7 @@
         .heading.my-5 {
             font-size: 18px !important;
             margin-bottom: .5rem !important;
-            margin-top: 0rem !important;
+            /* margin-top: 0rem !important; */
         }
         div.container-fluid.px-5.py-5,
         h4.rm.pt-5,
@@ -526,16 +554,16 @@
             height: 30px !important;
         }
         .x2 {
-            left: 45px !important;
+            right: 45px !important;
         }
         .x3 {
-            left: 35px !important;
+            right: 35px !important;
         }
         .x4 {
-            left: 57px !important;
+            right: 57px !important;
         }
         .x5 {
-            left: 35px !important;
+            right: 35px !important;
         }
     }
     /* @media (min-width: 577px) and (max-width: 767.98px) { ... } */
@@ -553,6 +581,10 @@
         .ccenter {
             text-align: center;
         }
+        .container-fluid-one {
+            padding-left: 69px;
+            padding-right: 69px;
+        }
     }
     
     @media (min-width: 992px) and (max-width: 1440px) {
@@ -569,6 +601,18 @@
         div.buttons.center a.btn.btn-dark,
         div.buttons.center a.btn.btn-outline-dark {
             width: 166px;
+        }
+        /* .container-fluid-one {
+            padding-left: 69px;
+            padding-right: 69px;
+        } */
+    }
+    /* Cahnge nav settings   */
+    
+    @media (min-width: 768px) {
+        .navbar-expand-md .navbar-nav .nav-link {
+            padding-right: .8rem !important;
+            padding-left: .8rem !important;
         }
     }
     /* Small Screens */
