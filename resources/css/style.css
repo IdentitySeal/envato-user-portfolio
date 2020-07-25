@@ -520,7 +520,8 @@
         p.pt-5,
         ul li a.nav-text,
         .btn.btn-outline-dark.text-white {
-            font-size: 10px;
+            font-size: 12px;
+            letter-spacing: 0.1em
         }
         li {
             list-style: none;
